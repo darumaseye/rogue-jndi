@@ -56,7 +56,7 @@ Starting HTTP server on 0.0.0.0:8000
 Starting LDAP server on 0.0.0.0:1389
 Mapping ldap://192.168.1.10:1389/ to artsploit.controllers.RemoteReference
 Mapping ldap://192.168.1.10:1389/o=reference to artsploit.controllers.RemoteReference
-Mapping ldap://192.168.1.10:1389/o=tomcat to artsploit.controllers.Tomcat
+Mapping ldap://192.168.1.10:1389/o=tomcat to artsploit.controllers.Exploit
 Mapping ldap://192.168.1.10:1389/o=groovy to artsploit.controllers.Groovy
 Mapping ldap://192.168.1.10:1389/o=websphere1 to artsploit.controllers.WebSphere1
 Mapping ldap://192.168.1.10:1389/o=websphere1,wsdl=* to artsploit.controllers.WebSphere1

