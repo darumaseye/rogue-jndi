@@ -57,8 +57,7 @@ class LdapServer extends InMemoryOperationInterceptor {
                 if(mapping.startsWith("/"))
                     mapping = mapping.substring(1); //remove first forward slash
 
-                System.out.printf("Mapping ldap://%s:%s/%s to %s\n",
-                        Config.hostname, Config.ldapPort, mapping, controller.getName());
+                //System.out.printf("Mapping ldap://%s:%s/%s to %s\n", Config.hostname, Config.ldapPort, mapping, controller.getName());
                 routes.put(mapping, instance);
             }
         }

@@ -27,7 +27,7 @@ import static artsploit.Utilities.serialize;
  *
  * @author artsploit
  */
-//@LdapMapping(uri = { "/o=websphere1", "/o=websphere1,wsdl=*" })
+@LdapMapping(uri = { "/o=websphere1", "/o=websphere1,wsdl=*" })
 public class WebSphere1 implements LdapController {
 
     public void sendResult(InMemoryInterceptedSearchResult result, String base) throws Exception {
